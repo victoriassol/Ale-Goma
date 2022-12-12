@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Fjalla+One&family=UnifrakturMaguntia&family=Zen+Antique+Soft&display=swap');
+@mixin banner{
+    height: 70vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+body{
+    font-family: roboto;
+
+    .logo{
+        display: flex;
+        border-radius:100%;
+        width:130px;
+        height:130px;
+        background: rgb(255,0,0);
+        background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,59,0,1) 5%, rgba(255,116,0,1) 11%, rgba(255,193,0,1) 16%, rgba(254,255,0,1) 21%, rgba(254,233,8,1) 27%, rgba(188,254,15,1) 33%, rgba(52,255,0,1) 39%, rgba(0,255,76,1) 45%, rgba(0,255,239,1) 51%, rgba(0,86,255,1) 57%, rgba(34,0,255,1) 64%, rgba(185,0,255,1) 72%, rgba(255,0,198,1) 80%, rgba(255,1,74,1) 90%, rgba(255,1,1,1) 100%);
+        background-size: 1000% 1000%;
+        animation: gradient 8s infinite
+    }
+    @keyframes gradient{
+        0%{background-position-x: 0%;
+        background-position-y: 0%;}
+        
+        100%{background-position-x: 100%;
+            background-position-y: 100%;}
+    }
+
+    .nav-link{
+        color: black;
+        font-size: 1.2em;
+    }
+
+    h1{
+        font-family: 'UnifrakturMaguntia', cursive;
+        color: black;
+        font-size: 2em;
+    }
+
+    .navbar-brand{
+        margin:auto;
+    }
+    .carouselExampleControls{
+        height: 80vh;
+
+        img{
+            object-fit: cover;
+        }
+    }
+
+    a{
+        font-size:1em;
+        text-decoration:none;
+        font-family: 'UnifrakturMaguntia', cursive;
+    }
+}
+#one{
+    background-image: url(/finales/billete\ ale\ goma.jpg);
+    @include banner;
+  }
+#two {
+    background-image: url(/finales/chiquita.jpg);
+    @include banner
+  }
+#three {
+    background-image: url(/finales/pintura\ 1\ costado.jpg);
+    @include banner
+  }
+
+// Responsive
+@media (max-width: 576px){
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    .navbar-brand{
+        width: 85px;
+        height: 85px;
+    }
+    #one, #two, #three{
+        height: 40vh;
+    }
+}
+
+// Obras
+
+
+// Taller
+
+.info-taller, .form-taller, .center{
+    max-width: 1000px;
+    margin:auto
+}
