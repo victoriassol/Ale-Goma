@@ -83,11 +83,13 @@ body{
 }
 
 // Obras
-
-
+.galeria{
+    overflow-x: hidden;
+}
 // Taller
 
 .info-taller, .form-taller, .center{
     max-width: 1000px;
     margin:auto
 }
+

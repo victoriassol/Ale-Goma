@@ -92,6 +92,10 @@ body a {
     height: 40vh;
   }
 }
+.galeria {
+  overflow-x: hidden;
+}
+
 .info-taller, .form-taller, .center {
   max-width: 1000px;
   margin: auto;
