@@ -55,15 +55,15 @@ body{
     }
 }
 #one{
-    background-image: url(/finales/billete\ ale\ goma.jpg);
+    background-image: url(./finales/billete\ ale\ goma.jpg);
     @include banner;
   }
 #two {
-    background-image: url(/finales/chiquita.jpg);
+    background-image: url(./finales/chiquita.jpg);
     @include banner
   }
 #three {
-    background-image: url(/finales/pintura\ 1\ costado.jpg);
+    background-image: url(./finales/pintura\ 1\ costado.jpg);
     @include banner
   }
 
