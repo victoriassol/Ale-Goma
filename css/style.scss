@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Fjalla+One&family=UnifrakturMaguntia&family=Zen+Antique+Soft&display=swap');
 @mixin banner{
-    height: 70vh;
-    background-position: center center;
-    background-size: cover;
+    height: 70vh;   
+
 }
 
 body{
@@ -43,8 +42,14 @@ body{
     .carouselExampleControls{
         height: 80vh;
 
+        
+    }
+
+    .carousel-item{
         img{
-            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
         }
     }
 
@@ -55,15 +60,16 @@ body{
     }
 }
 #one{
-    background-image: url("/finales/billete\ ale\ goma.jpg");
+    background-image: url("finales/billete ale goma.jpg");
     @include banner;
+    
   }
 #two {
-    background-image: url("/finales/chiquita.jpg");
+    background-image: url("finales/chiquita.jpg");
     @include banner
   }
 #three {
-    background-image: url("/finales/pintura\ 1\ costado.jpg");
+    background-image: url("finales/pintura\ 1\ costado.jpg");
     @include banner
   }
 
