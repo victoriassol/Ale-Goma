@@ -59,6 +59,10 @@ body{
         font-family: 'UnifrakturMaguntia', cursive;
     }
 }
+
+.navbar-toggler{
+    color:gray
+}
 #one{
     background-image: url("finales/billete ale goma.jpg");
     @include banner;
