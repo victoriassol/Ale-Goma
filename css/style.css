@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Fjalla+One&family=UnifrakturMaguntia&family=Zen+Antique+Soft&display=swap");
+body {
+  font-family: roboto;
+}
+body .logo {
+  display: flex;
+  border-radius: 100%;
+  width: 130px;
+  height: 130px;
+  background: rgb(255, 0, 0);
+  background: radial-gradient(circle, rgb(255, 0, 0) 0%, rgb(255, 59, 0) 5%, rgb(255, 116, 0) 11%, rgb(255, 193, 0) 16%, rgb(254, 255, 0) 21%, rgb(254, 233, 8) 27%, rgb(188, 254, 15) 33%, rgb(52, 255, 0) 39%, rgb(0, 255, 76) 45%, rgb(0, 255, 239) 51%, rgb(0, 86, 255) 57%, rgb(34, 0, 255) 64%, rgb(185, 0, 255) 72%, rgb(255, 0, 198) 80%, rgb(255, 1, 74) 90%, rgb(255, 1, 1) 100%);
+  background-size: 1000% 1000%;
+  -webkit-animation: gradient 8s infinite;
+          animation: gradient 8s infinite;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position-x: 0%;
+    background-position-y: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+    background-position-y: 100%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position-x: 0%;
+    background-position-y: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+    background-position-y: 100%;
+  }
+}
+body .nav-link {
+  color: black;
+  font-size: 1.2em;
+}
+body h1 {
+  font-family: "UnifrakturMaguntia", cursive;
+  color: black;
+  font-size: 2em;
+}
+body .navbar-brand {
+  margin: auto;
+}
+body .carouselExampleControls {
+  height: 80vh;
+}
+body .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body a {
+  font-size: 1em;
+  text-decoration: none;
+  font-family: "UnifrakturMaguntia", cursive;
+}
+
+.navbar-toggler {
+  color: gray;
+}
+
+#one {
+  background-image: url("finales/billete ale goma.jpg");
+  height: 70vh;
+}
+
+#two {
+  background-image: url("finales/chiquita.jpg");
+  height: 70vh;
+}
+
+#three {
+  background-image: url("finales/pintura 1 costado.jpg");
+  height: 70vh;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  .navbar-brand {
+    width: 85px;
+    height: 85px;
+  }
+  #one, #two, #three {
+    height: 40vh;
+  }
+}
+.galeria {
+  overflow-x: hidden;
+}
+
+.info-taller, .form-taller, .center {
+  max-width: 1000px;
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */
