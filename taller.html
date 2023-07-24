@@ -25,18 +25,8 @@
           </button>
           <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item dropdown mx-4">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Obras
-                </a>
-                <ul class="dropdown-menu ">
-                  <li><a class="dropdown-item" href="./pinturas.html">Pinturas</a></li>
-                  <li><a class="dropdown-item" href="./dibujos.html">Dibujos</a></li>
-                  <li><a class="dropdown-item" href="./ceramicas.html">Cerámica</a></li>
-                  <li><a class="dropdown-item" href="./instalaciones.html">Instalaciones</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="./obras.html">Ver todo</a></li>
-                </ul>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="./obras.html">Obras</a>
               </li>
               <li class="nav-item mx-4">
                 <a class="nav-link active" aria-current="page" href="./index.html#biografía">Biografía</a>
@@ -45,49 +35,45 @@
                 <a class="nav-link" href="./taller.html">Taller Perdidx</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control" type="search" placeholder="Buscador de obras..." aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
           </div>
         </div>
       </nav>
   <main>
     <section>
-      <div class="d-flex-column justify-content-center info-taller p-5">
+      <div class="d-flex-column justify-content-left info-taller p-5">
       <h1 class="p-5">Taller Perdidx</h1>
       <p class="align-self-center">Taller Perdidx es un taller de pintura al óleo facilitado por Ale Goma en la ciudad de Rosario, zona centro. Orientado a todos los niveles, desde principiante a avanzado. Exploramos desde el dibujo hasta la mezcla, las pinceladas y los detalles. <br> Si tenés dudas o te interesa participar del taller, enviá un mensaje y dejá tu información de contacto :)</p>
       </div>
 
-      <form class="form-taller w-80 p-5 pt-0 justify-content-center">
+      <form id="form" class="form-taller w-80 p-5 pt-0 justify-content-center">
         <div class="form-outline mb-4">
-          <input type="text" id="form4Example1" class="form-control" />
+          <input type="text" id="name" name="name" class="form-control" />
           <label class="form-label" for="form4Example1">Nombre</label>
         </div>
-      
+
         <div class="form-outline mb-4">
-          <input type="email" id="form4Example2" class="form-control" />
+          <input type="email" id="email" name="email" class="form-control" />
           <label class="form-label" for="form4Example2">Correo electrónico</label>
         </div>
 
         <div class="form-outline mb-4">
-            <input type="email" id="form4Example2" class="form-control" />
+            <input type="text" id="phone" name="phone" class="form-control" />
             <label class="form-label" for="form4Example2">Número de teléfono</label>
           </div>
-      
+
         <div class="form-outline mb-4">
-          <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+          <textarea class="form-control" name="message" id="message" rows="4"></textarea>
           <label class="form-label" for="form4Example3">Tu mensaje</label>
         </div>
-      
-        <button type="submit" class="btn btn-primary btn-block mb-4 w-25">Send</button>
+
+        <button id="button" type="submit" class="btn btn-primary btn-block mb-4 w-25">Send</button>
       </form>
     </section>
   </main>
   <footer class="text-center text-white" style="background-color: #f1f1f1;">
     <div class="container pt-4">
       <section class="mb-4">
-  
+
         <a
           class="btn btn-link btn-floating btn-lg text-dark m-1"
           href="https://twitter.com/ale__goma"
@@ -95,7 +81,7 @@
           data-mdb-ripple-color="dark"
           ><i class="fab fa-twitter"></i
         ></a>
-  
+
         <a
           class="btn btn-link btn-floating btn-lg text-dark m-1"
           href="https://www.instagram.com/ale__goma"
@@ -103,24 +89,30 @@
           data-mdb-ripple-color="dark"
           ><i class="fab fa-instagram"></i
         ></a>
-  
+
         <a
           class="btn btn-link btn-floating btn-lg text-dark m-1"
           href="mailto:aletgp2012@gmail.com"
           role="button"
           data-mdb-ripple-color="dark"
           > <i class="fas fa-envelope-open-text"></i></a>
-        
+
       </section>
     </div>
-  
+
     <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     Rosario, Santa Fe © Ale Goma 2023
     </div>
   </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('eoz9Z6oXtpicZXaoL')
+</script>
     <script type="text/javascript"></script>
   </body>
 </html>
